@@ -54,7 +54,7 @@ public class Word {
     }
 
     private String readLemma(Element wElement) throws InvalidWordException {
-        String lemma = wElement.getAttribute(LEMMA_ATTR).trim();
+        String lemma = wElement.getAttribute(LEMMA_ATTR).trim().replace(' ', '_');
         if (lemma.length() == 0) {
             throw new InvalidWordException("No word's lemma specified (word ID: " + this.wordId + ")");
         }
