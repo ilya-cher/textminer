@@ -11,6 +11,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -58,17 +63,7 @@
     <favorites_list name="textminer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Word.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/Word.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="74" selection-start="2295" selection-end="2295" vertical-scroll-proportion="0.7553957">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -78,24 +73,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/CompDegree.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Features.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Gender.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Link.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Mood.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Number.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Person.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/POS.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Tense.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/VerbForm.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Voice.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/Sentence.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/textminer/extraction/RelationExtractor.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDataset.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDatasetBuilder.java" />
         <option value="$PROJECT_DIR$/src/ru/spbau/textminer/extraction/Relation.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/text/Word.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/TreeBankParser.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/RelationDataset.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDataset.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/Dataset.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/MalletChunkerDatasetWriter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/DatasetWriter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/MalletDatasetWriter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/MalletRelationDatasetWriter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/DatasetBuilder.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDatasetBuilder.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/RelationDatasetBuilder.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/textminer/Main.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -127,7 +125,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -164,64 +162,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textminer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textminer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textminer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="text" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="Application.ChunkerDatasetBuilder">
-    <configuration default="false" name="ChunkerDatasetBuilder" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ru.spbau.textminer.ChunkerDatasetBuilder" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="textminer" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -253,12 +213,12 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -296,8 +256,30 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.spbau.textminer.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="textminer" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2949" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.ChunkerDatasetBuilder" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -320,6 +302,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">C:\Documents and Settings\ilya\Application Data\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -331,26 +314,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1032" height="574" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-5" width="1024" height="605" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26714432" sideWeight="0.41920376" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58079624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27971312" sideWeight="0.38849765" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4488568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61150235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32629108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -401,85 +384,83 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Features.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/Word.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="5734" selection-end="5734" vertical-scroll-proportion="0.0" />
+        <state line="19" column="16" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Gender.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/extraction/ChunkExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
+        <state line="62" column="49" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.020656137" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Link.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/ConfigBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
+        <state line="8" column="13" selection-start="211" selection-end="211" vertical-scroll-proportion="0.08262455" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Mood.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/FilesParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/POS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Tense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/VerbForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/feature/Voice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/MalletDatasetWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="366" selection-end="366" vertical-scroll-proportion="0.21963824" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDataset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="638" selection-end="638" vertical-scroll-proportion="0.043927647" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDatasetBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="40" selection-start="5452" selection-end="5452" vertical-scroll-proportion="0.0" />
+        <state line="9" column="17" selection-start="210" selection-end="210" vertical-scroll-proportion="0.08262455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/extraction/RelationExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="4" selection-start="2511" selection-end="2511" vertical-scroll-proportion="2.5917313" />
+        <state line="91" column="75" selection-start="4117" selection-end="4117" vertical-scroll-proportion="1.6580247" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/extraction/Relation.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/Dataset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0425" />
+        <state line="60" column="35" selection-start="1945" selection-end="1945" vertical-scroll-proportion="1.0741191" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/text/Word.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/DatasetWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="74" selection-start="2295" selection-end="2295" vertical-scroll-proportion="0.7553957">
+        <state line="6" column="95" selection-start="210" selection-end="210" vertical-scroll-proportion="0.12393682" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/DatasetBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/ChunkerDatasetBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="66" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/RelationDatasetBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="70" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/TreeBankParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="55" selection-start="3706" selection-end="3706" vertical-scroll-proportion="0.035799522">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/MalletChunkerDatasetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="11" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.92840093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/MalletRelationDatasetWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="38" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.92840093">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/textminer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.035799522">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,7 +516,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>textminer</last-edited>
+          <last-edited>textprocessor</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -560,7 +541,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Apache Commons</last-edited>
+          <last-edited>Google Guava</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,28 +1,29 @@
 package ru.spbau.textminer;
 
+import com.google.common.collect.Multimap;
 import ru.spbau.textminer.extraction.Chunk;
 import ru.spbau.textminer.extraction.ChunkType;
 import ru.spbau.textminer.text.Sentence;
 import ru.spbau.textminer.text.Word;
 
 import java.io.*;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class MalletDatasetWriter implements DatasetWriter {
-    public void writeDataset(ChunkerDataset dataset, File trainingFile, File testFile) throws IOException {
+public class MalletChunkerDatasetWriter implements DatasetWriter<Chunk> {
+    public void writeDataset(Dataset<Chunk> dataset, File trainingFile, File testFile) throws IOException {
         writeData(dataset.getTrainingSet(), trainingFile);
         writeData(dataset.getTestSet(), testFile);
     }
 
-    private void writeData(Map<Sentence, List<Chunk>> data, File file) throws IOException {
+    private void writeData(Multimap<Sentence, Chunk> data, File file) throws IOException {
         BufferedWriter writer = null;
         try {
             writer = new BufferedWriter(new FileWriter(file));
-            for (Map.Entry<Sentence, List<Chunk>> entry: data.entrySet()) {
+            for (Map.Entry<Sentence, Collection<Chunk>> entry: data.asMap().entrySet()) {
                 Sentence sentence = entry.getKey();
-                List<Chunk> chunks = entry.getValue();
+                Collection<Chunk> chunks = entry.getValue();
                 if (chunks.size() > 0) {
                     Map<Word, ChunkType> wordsInChunks = new HashMap<Word, ChunkType>();
                     for (Chunk chunk : chunks) {

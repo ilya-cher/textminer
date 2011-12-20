@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SLF4J" level="project" />
     <orderEntry type="library" name="Apache Commons" level="project" />
+    <orderEntry type="library" name="Google Guava" level="project" />
   </component>
 </module>
 
