@@ -37,11 +37,12 @@ public class ExecMystem {
                     p.waitFor();
                 } catch (InterruptedException e) {}
 
-                BufferedReader tempReader = new BufferedReader(new InputStreamReader(new FileInputStream("D:\\text\\apache-opennlp-1.5.1-incubating\\temp-output.txt"), "cp1251"));
+                BufferedReader tempReader = new BufferedReader(new InputStreamReader(new FileInputStream(args[4]), "cp1251"));
                 String outputLine;
                 while ((outputLine = tempReader.readLine()) != null) {
                     writer.println(outputLine);
                 }
+		tempReader.close();
 
                 writer.println();
             }
