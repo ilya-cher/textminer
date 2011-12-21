@@ -26,7 +26,6 @@ public class RelationExtractor {
             relations.putAll(sentence, extractRelations(sentence, chunksMap.get(sentence)));
         }
 
-        System.out.println(sentences.size());
         return relations;
     }
 
