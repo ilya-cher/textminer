@@ -1,3 +1,4 @@
+@echo off
 if "%1" == "" goto error
 java -cp .\textprocessor.jar ru.spbau.textminer.processor.ProcessOriginalText %1 text.txt
 java -Dfile.encoding=cp866 -cp .\textprocessor.jar ru.spbau.textminer.processor.ExecMystem .\mystem.exe text.txt mystem-output.txt temp.txt temp-output.txt
