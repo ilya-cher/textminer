@@ -3,7 +3,7 @@ package ru.spbau.textminer;
 import org.apache.commons.cli.CommandLine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.spbau.textminer.text.Config;
+
 import java.util.Properties;
 
 public class ConfigBuilder {
@@ -12,8 +12,10 @@ public class ConfigBuilder {
     public ConfigBuilder(Config defaults) {
         filesPath = defaults.getFilesPath();
         filesExt = defaults.getFilesExt();
-        trainFileName = defaults.getTrainFileName();
-        testFileName = defaults.getTestFileName();
+        chunkerTrainFileName = defaults.getChunkerTrainFileName();
+        chunkerTestFileName = defaults.getChunkerTestFileName();
+        relTrainFileName = defaults.getRelTrainFileName();
+        relTestFileName = defaults.getRelTestFileName();
         testFraction = defaults.getTestFraction();
         formatName = defaults.getFormatName();
     }
@@ -32,16 +34,30 @@ public class ConfigBuilder {
         return this;
     }
 
-    public ConfigBuilder setTrainFileName(String trainFileName) {
-        if (trainFileName != null) {
-            this.trainFileName = trainFileName;
+    public ConfigBuilder setChunkerTrainFileName(String chunkerTrainFileName) {
+        if (chunkerTrainFileName != null) {
+            this.chunkerTrainFileName = chunkerTrainFileName;
         }
         return this;
     }
 
-    public ConfigBuilder setTestFileName(String testFileName) {
-        if (testFileName != null) {
-            this.testFileName = testFileName;
+    public ConfigBuilder setChunkerTestFileName(String chunkerTestFileName) {
+        if (chunkerTestFileName != null) {
+            this.chunkerTestFileName = chunkerTestFileName;
+        }
+        return this;
+    }
+
+    public ConfigBuilder setRelTrainFileName(String relTrainFileName) {
+        if (relTrainFileName != null) {
+            this.relTrainFileName = relTrainFileName;
+        }
+        return this;
+    }
+
+    public ConfigBuilder setRelTestFileName(String relTestFileName) {
+        if (relTestFileName != null) {
+            this.relTestFileName = relTestFileName;
         }
         return this;
     }
@@ -63,8 +79,10 @@ public class ConfigBuilder {
     public ConfigBuilder from(Properties properties) {
         setFilesPath(properties.getProperty("filesPath"));
         setFilesExt(properties.getProperty("filesExt"));
-        setTrainFileName(properties.getProperty("trainFileName"));
-        setTestFileName(properties.getProperty("testFileName"));
+        setChunkerTrainFileName(properties.getProperty("chunkerTrainFileName"));
+        setChunkerTestFileName(properties.getProperty("chunkerTestFileName"));
+        setRelTrainFileName(properties.getProperty("relTrainFileName"));
+        setRelTestFileName(properties.getProperty("relTestFileName"));
         setTestFraction(getTestFractionValue(properties.getProperty("testFraction")));
         setFormatName(properties.getProperty("formatName"));
         return this;
@@ -73,8 +91,10 @@ public class ConfigBuilder {
     public ConfigBuilder from(CommandLine cmd) {
         setFilesPath(cmd.getOptionValue("files-path"));
         setFilesExt(cmd.getOptionValue("files-ext"));
-        setTrainFileName(cmd.getOptionValue("train-file"));
-        setTestFileName(cmd.getOptionValue("test-file"));
+        setChunkerTrainFileName(cmd.getOptionValue("chunker-train-file"));
+        setChunkerTestFileName(cmd.getOptionValue("chunker-test-file"));
+        setRelTrainFileName(cmd.getOptionValue("rel-train-file"));
+        setRelTestFileName(cmd.getOptionValue("rel-test-file"));
         setTestFraction(getTestFractionValue(cmd.getOptionValue("test-fraction")));
         setFormatName(cmd.getOptionValue("format"));
         return this;
@@ -102,22 +122,27 @@ public class ConfigBuilder {
             throw new ConfigException("Config values are missing");
         }
 
-        return new Config(filesPath, filesExt, trainFileName, testFileName, testFraction, formatName);
+        return new Config(filesPath, filesExt, chunkerTrainFileName, chunkerTestFileName,
+                relTrainFileName, relTestFileName, testFraction, formatName);
     }
 
     private boolean checkNulls() {
         return (filesPath == null ||
                 filesExt == null ||
-                trainFileName == null ||
-                testFileName == null ||
+                chunkerTrainFileName == null ||
+                chunkerTestFileName == null ||
+                relTrainFileName == null ||
+                relTestFileName == null ||
                 testFraction == null ||
                 formatName == null);
     }
 
     private String filesPath;
     private String filesExt;
-    private String trainFileName;
-    private String testFileName;
+    private String chunkerTrainFileName;
+    private String chunkerTestFileName;
+    private String relTrainFileName;
+    private String relTestFileName;
     private Double testFraction;
     private String formatName;
 
