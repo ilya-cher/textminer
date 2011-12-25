@@ -187,16 +187,16 @@ public class ProcessChunkerOutput {
 	}
 
 	private static POS getPOS(String features) {
-		if (features.contains("A")) {
-			return POS.A;
-		} else if (features.contains("ADV")) {
+		if (features.contains("ADVPRO")) {
 			return POS.ADV;
-		} else if (features.contains("ADVPRO")) {
+		} else if (features.contains("ADV")) {
 			return POS.ADV;
 		} else if (features.contains("ANUM")) {
 			return POS.NUM;
 		} else if (features.contains("APRO")) {
-			return POS.S; //"APRO";
+			return POS.S;
+		} else if (features.contains("PART")) {
+			return POS.PART;
 		} else if (features.contains("COM")) {
 			return POS.COM;
 		} else if (features.contains("CONJ")) {
@@ -205,14 +205,14 @@ public class ProcessChunkerOutput {
 			return POS.INTJ;
 		} else if (features.contains("NUM")) {
 			return POS.NUM;
-		} else if (features.contains("PART")) {
-			return POS.PART;
-		} else if (features.contains("PR")) {
-			return POS.PR;
-		} else if (features.contains("S")) {
-			return POS.S;
+		} else if (features.contains("A")) {
+			return POS.A;
 		} else if (features.contains("SPRO")) {
 			return POS.S;
+		} else if (features.contains("S")) {
+			return POS.S;
+		} else if (features.contains("PR")) {
+			return POS.PR;
 		} else if (features.contains("V")) {
 			return POS.V;
 		} else {
